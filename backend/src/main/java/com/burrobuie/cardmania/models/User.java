@@ -53,7 +53,7 @@ public class User implements UserDetails {
     
     @NotBlank(message = "Email is mandatory")
     @Column(unique=true)
-    //@IUniqueEmail
+    @IUniqueEmail
     private String email;
     
     //@JsonProperty(access = JsonProperty.Access.WRITE_ONLY)

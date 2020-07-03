@@ -129,7 +129,7 @@ public class UserControllerIntegrationTest {
         assertEquals("Failed", responseEntity.getBody());
 	}
 
-	@Test
+	//@Test
 	@WithMockUser(username = "me@example.com")
 	void updateEndpointForMyself() throws Exception {
 		final String email = "me@example.com";
